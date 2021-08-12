@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/style2.css" />
+</head>
+<body>
+    <form method="POST" action="/api/reservation">
+    
+    <div class="form-group">
+         <label for="Name"> Name: </label>
+        <input type="text" required id="name" name="name" />
+    </div>
+    
+    <div class="form-group">
+        <label for="Email"> Email: </label>
+        <input type="email" required id="email" name="email" />
+    </div>
+    
+    <div class="form-group">
+        <label for="DOB"> Date of birth: </label>
+        <input type="date" id="dob" name="dob" />
+    </div>
+
+    <div class="form-group">
+        <label for="FC"> Favorite Color: </label>
+        <input type="text" id="fav-color" name="fav-color" />
+    </div>
+    
+    <div class="form-group">
+        <label for="FN"> Favorite Number: </label>
+        <input type="number" id="fav-number" name="fav-number" />
+    </div>
+    
+    <div class="form-group">
+        <label for="data"> Confirm data is correct: </label>
+        <input type="checkbox" id="confirm" name="confirm" />
+    </div>
+    
+    <div class="form-group">
+        <label for="submit"> </label>
+        <input type="submit" id="submit" name="submit" />
+    </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,96 @@
+
+.area-grid {
+    height: 100vh;
+    display: grid;
+    /* grid-template-coumns: 1fr 3fr; */
+    grid-template-columns: 400px 1fr;
+    grid-template-areas:
+    "area-one area-two"
+    "area-three area-four";
+
+    
+    gap: 5px;
+    /* gap: 5px 10px; */
+    /* row-gap: 5px;
+    column-gap: 10px; */
+}
+
+.area {
+    font-size: 24px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+#areaone {
+    grid-area: area-one;
+    background-color: blue;
+}
+
+#areatwo {
+    grid-area: area-two;
+    background-color: red;
+}
+
+#areatwo img {
+    width: 30%;
+    height: auto;
+}
+
+#areathree {
+    grid-area: area-three;
+    background-color: green;
+}
+#areafour {
+    grid-area: area-four;
+    background-color: purple;
+}
+
+.justify-start {
+    justify-items: start;
+}
+
+.justify-end {
+    justify-items: end;
+}
+
+.justify-center {
+    justify-items: center;
+}
+
+.justify-stretch {
+    justify-items: stretch;
+}
+
+.align-start {
+    align-items: start;
+}
+
+.align-end {
+    align-items: end;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-stretch {
+    align-items: stretch;
+}
+
+@media screen and (max-width: 768px) { 
+    .area-grid {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "area-one"
+        "area-two"
+        "area-three"
+        "area-four";
+    
+        
+        gap: 5px;
+    }
+    
+}

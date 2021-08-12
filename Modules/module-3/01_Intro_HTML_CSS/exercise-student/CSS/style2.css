@@ -1,0 +1,21 @@
+
+label {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  padding-left: 20px ;
+  
+}
+input {
+  height: 20px;
+  width: 300px;
+  border: 1px solid #000;
+  margin-top: 10px;
+ 
+} 
+
+form{
+  background-color: grey;
+  margin: 10px;
+  height: 240px;
+  width: 600px;
+}

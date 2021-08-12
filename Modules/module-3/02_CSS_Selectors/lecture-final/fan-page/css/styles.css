@@ -1,0 +1,146 @@
+
+/* universal selector */
+* {
+    color: pink;
+}
+
+
+
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: gray;
+}
+
+
+img {
+    width: 50%;
+    height: auto;
+}
+
+table {
+    width: 50%;
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
+}
+h2 {
+    text-decoration: underline;
+}
+
+blockquote {
+    width: 50%;
+    font-style: italic;
+    color: purple;
+}
+
+/* select by id */
+#quoteone {
+    color: orange;
+
+    /* padding all around */
+    padding: 15px;
+
+    /* top, right, bottom, left */
+    /* padding: 20px 20px 10px 5px; */
+
+    /* top/bottom right/left
+    /* padding: 10px 20px; */
+
+    /* top right/left bottom
+    /* padding: 10px 20px 30px; */
+
+    /* more info:
+    https://www.w3schools.com/css/css_padding.asp
+    */
+}
+
+/* define class (use by adding class="redborder") */
+.redborder {
+    border: solid darkred 3px;
+}
+
+.fontitalics {
+    font-style: italic;
+    font-size: 30px;
+}
+
+.fontnormal {
+    font-style: normal;
+}
+
+/* select h2 elements with redborder class */
+h2.redborder {
+    background-color: black;
+}
+
+/* select blockquote with id quotetwo */
+blockquote#quotetwo {
+    font-size: 25px;
+}
+
+/* select td, th, #quotethree  */
+td, th, #quotethree {
+    font-size: 30px;
+}
+
+/* select td descendants of table */
+table td {
+    background-color: black;
+}
+
+/* select tr children of table */
+ul > li > a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* select a element with href attribute with specified value */
+a[href="https://nilsfrahm.com"] {
+    color: yellow;;
+}
+
+
+/* select the hover state of the a element */
+a:hover {
+    color: white;
+}
+
+/* select the visited state of  a element */
+a {
+    color: blue;
+}
+
+a:visited {
+    color: blue;
+}
+
+.bluebox {
+    background-color: blue;
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+    border: black 3px solid;
+    padding: 20px;
+}
+
+section#divider {
+    margin-top: 50px;
+    margin-bottom: 100PX;
+    margin-left: 100px;
+}
+
+#greatquotes {
+    background-color: white;
+}
+
+#favereleases {
+    /* margin: 30px 20px; */
+    margin-left: 40px;
+    padding: 10px;
+}
+
+.hidden {
+    display: none;
+}

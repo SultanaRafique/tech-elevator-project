@@ -1,0 +1,80 @@
+
+.flex-container {
+    display: flex;
+    width: 100%;
+    /* height: 100vh; */
+    /* justify-content: flex-end;
+    align-items: stretch; */
+}
+
+.flex-item {
+    padding: 20px 0px; 
+    text-align: center;
+    color: white;
+
+    /* shorthand for flex-grow, flex-shrink, flex-basis */
+
+    /* these are the default values
+    flex-grow: 0; (don't grow - size based on contents)
+    flex-shrink: 1; (shrink value is 1 - can't go smaller that its true size 
+    flex-basis: auto;  (use my height and width)
+
+    
+    /* shorthand for flex-grow, flex-shrink, flex-basis */
+    flex: 0 0 auto /* we'll say don't allow grow or shrink and use true size */
+
+
+}
+
+.flex-rule {
+
+    /* same as default to start */
+    /* flex: 0 0 auto; */
+
+
+    /* 1) allow to grow but proportion is the item size */
+    flex: 1 0 auto;
+
+    /* 2) allow to grow but request a minimum of 200px; */
+    /* flex: 1 0 200px; */
+
+    /* 3) allow to grow AND shrink with a flex-basis of 200px */
+    /* flex: 1 1 200px; */
+
+}
+
+/* add this class to allow item to grow 3 times bigger than
+    other "growable" items */
+.grow-3 {
+    flex: 3 0 auto;
+}
+
+/* add this class to allow normal growth but request a
+    minimum of 200px if possible */
+.grow-1-basis-200 {
+    flex: 1 0 200px;
+}
+
+/* add this to allow growth, request 200px minimum, AND
+ allow it to shrink 3 times as much as other "shrinkable"
+ items */
+.shrink-3-basis-200 {
+    flex: 1 3 200px;
+}
+
+#item-1 {
+    background-color: blue;
+}
+
+#item-2 {
+    background-color: red;
+}
+
+#item-3 {
+    background-color: green;
+}
+
+#item-4 {
+    background-color: purple;
+
+}

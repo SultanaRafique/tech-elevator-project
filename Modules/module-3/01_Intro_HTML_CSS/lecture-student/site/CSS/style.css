@@ -1,0 +1,19 @@
+img {
+    height: 200px;
+    
+    }
+    
+    body {
+     font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    h1 {
+        font-size: 100px;
+        /* color: darkred;
+        border-style: solid;
+        border-width: 8px;
+        border-color: darkred; */
+    
+        border: solid 8px purple;
+        background-color: pink;
+    }

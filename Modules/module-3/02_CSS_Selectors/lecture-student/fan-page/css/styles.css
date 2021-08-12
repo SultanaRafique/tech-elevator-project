@@ -1,0 +1,77 @@
+
+/* universal selector */
+
+
+
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: gray;
+}
+
+
+img {
+    width: 50%;
+    height: auto;
+}
+
+table {
+    width: 50%;
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
+}
+h2 {
+    text-decoration: underline;
+}
+
+blockquote {
+    width: 50%;
+    font-style: italic;
+    color: purple;
+}
+
+/* select by id */
+
+/* define class (use by adding class="redborder") */
+
+.fontitalics {
+    font-style: italic;
+    font-size: 30px;
+}
+
+.fontnormal {
+    font-style: normal;
+}
+
+/* select h2 elements with redborder class */
+
+/* select blockquote with id quoteone */
+
+/* select h2, td, and th elements */
+
+/* select td descendants of table */
+
+/* select td children of table */
+
+/* select a element with href attribute with specified value */
+
+/* select the hover state of the a element */
+
+/* select the visited state of  a elementa */
+
+.bluebox {
+    background-color: blue;
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+    border: black 3px solid;
+    padding: 20px;
+}
+
+section#divider {
+    margin-top: 50px;
+    margin-bottom: 100PX;
+    margin-left: 100px;
+}
