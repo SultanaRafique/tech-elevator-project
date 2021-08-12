@@ -1,0 +1,62 @@
+Bug 1
+-----
+Test that demonstrates problem:
+getTimesheetsByEmployeeId_returns_list_of_all_timesheets_for_employee
+
+Expected output:
+2
+
+Actual output:
+1
+
+How did you fix this bug?
+
+Replaced if condition block with while loop, so that if results (rowSet) contains more than one row,
+it should be added to returning list, and it should not always return single row.
+
+
+Bug 2
+-----
+Test that demonstrates problem:
+getTimesheetsByProjectId_returns_list_of_all_timesheets_for_project
+
+Expected output:
+3
+
+Actual output:
+2
+
+How did you fix this bug?
+
+Replaced the WHERE clause condition in sql, from employee_id to project_id, so that it can return
+timesheets for project but not for employee.
+
+
+Bug 3
+-----
+Test that demonstrates problem:
+updated_timesheet_has_expected_values_when_retrieved
+
+Expected output:false
+
+Actual output:true
+
+How did you fix this bug?
+attribute (billable ) was missing from the sql , updating the timesheet, so this method was
+not updating to billable attribute, just added billable attribute to the update sql.
+
+
+Bug 4
+-----
+Test that demonstrates problem:
+getBillableHours_returns_correct_total
+
+Expected output:0.0
+
+Actual output:2.0
+
+How did you fix this bug?
+sql  for billableHours missing billable = true in WHERE clause, so
+sql is returning hours_worked instead of billable_hours, just added "AND billable = true"
+in the sql.
+

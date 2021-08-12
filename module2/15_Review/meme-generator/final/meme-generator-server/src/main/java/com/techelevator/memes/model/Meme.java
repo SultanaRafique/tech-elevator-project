@@ -1,0 +1,78 @@
+package com.techelevator.memes.model;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+/**
+ * Class to hold meme item from get_memes endpoint
+ */
+public class Meme {
+
+    private String id;
+    private String name;
+    private String url;
+    private Integer width;
+    private Integer getWidth;
+
+    @JsonProperty("box_count")
+    private Integer boxCount;
+
+
+
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public Integer getWidth() {
+        return width;
+    }
+
+    public void setWidth(Integer width) {
+        this.width = width;
+    }
+
+    public Integer getGetWidth() {
+        return getWidth;
+    }
+
+    public void setGetWidth(Integer getWidth) {
+        this.getWidth = getWidth;
+    }
+
+    public Integer getBoxCount() {
+        return boxCount;
+    }
+
+    public void setBoxCount(Integer boxCount) {
+        this.boxCount = boxCount;
+    }
+
+    /*
+    public Integer getBox_count() {
+        return box_count;
+    }
+
+    public void setBox_count(Integer box_count) {
+        this.box_count = box_count;
+    }*/
+}
